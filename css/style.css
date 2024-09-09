@@ -1,0 +1,25 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Minecraft, Geneva, Tahoma, sans-serif;
+}
+        h1{
+            color: red;
+        }
+        .fundo-roxo{
+            background-color: purple;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+        .h2-margin{
+            margin: 100px 100px 0px 0px;
+        }
+        .container{
+            border: 1px solid black;
+        }
+        @font-face {
+            font-family: 'Minecraft';
+            src: url('Minecraft.ttf') format('truetype');
+          }
