@@ -3,80 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
     <link rel="icon" type="image/x-icon" href="https://www.4devs.com.br/favicon-32x32.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-    <title>Cadastro de Produto</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <h3>Cadastro de Produto</h3>
-    </div>
-    <div>
-
-    </div>
-    <div class="container-sm">
-        <form action="mailto:psiopstk1500@gmail.com" >
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="nome" placeholder="Nome">
-                    <label for="nome">Nome</label>
-                  </div>
-                <div class="form-floating mb-3">
-                    <input type="number" class="form-control" id="estoque" placeholder="Estoque">
-                    <label for="estoque">Estoque</label>
+    <section class="flex-container">
+        <div class="div-1">
+            <h3>Cadastro de Produtos</h3>
+            <img src = "https://www.4devs.com.br/favicon-32x32.png">
+        </div>
+        <section class="flex-container-2">
+            <div class="div-2">
+                <ul>
+                    <li>
+                        <a href="./funcionarios.html">Funcionarios</a>
+                    </li>
+                    <li>
+                        <a href="./produto.html">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="./cadastro-produto.html">Cadastro Produtos</a>
+                    </li>
+                    <li>
+                        <a href="./cadastro-funcionarios.html">Cadastro Funcionarios</a>
+                    </li>
+                </ul>
+            </div>
+            <form action="mailto:psiopstk1500@gmail.com" >
+              <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="nome" placeholder="Nome">
+                  <label for="nome">Nome</label>
                 </div>
-                    <select class="form-select mb-3" aria-label="tamanho">
-                    <option selected>Tamanhos de Pedra</option>
-                    <option value="1">Placas de Pedra</option>
-                    <option value="2">Pedaços de Pedra</option>
-                    <option value="3">Pedras Menores</option>
-                  </select>
-                <select class="form-select mb-3" aria-label="tipo">
-                    <option selected>Tipo de Pedra</option>
-                    <option value="1">Andesito</option>
-                    <option value="2">Granito</option>
-                    <option value="3">Diorito</option>
-                  </select>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
-                      Agree to terms and conditions
-                    </label>
-                    <div class="invalid-feedback">
-                      You must agree before submitting.
+              <div class="form-floating mb-3">
+                  <input type="number" class="form-control" id="estoque" placeholder="Estoque">
+                  <label for="estoque">Estoque</label>
+              </div>
+                  <select class="form-select mb-3" aria-label="tamanho">
+                  <option selected>Tamanhos de Pedra</option>
+                  <option value="1">Placas de Pedra</option>
+                  <option value="2">Pedaços de Pedra</option>
+                  <option value="3">Pedras Menores</option>
+                </select>
+              <select class="form-select mb-3" aria-label="tipo">
+                  <option selected>Tipo de Pedra</option>
+                  <option value="1">Andesito</option>
+                  <option value="2">Granito</option>
+                  <option value="3">Diorito</option>
+                </select>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="politica-privacidade" required>
+                  <label class="form-check-label" for="politica-privacidade">
+                    Eu Aceito os termos de Política de Privacidade
+                  </label>
+                  <div class="invalid-feedback">
+                      Você deve aceitar antes de fazer o envio.
                     </div>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="politica-privacidade" required>
-                    <label class="form-check-label" for="politica-privacidade">
-                      Eu Aceito os termos de Política de Privacidade
-                    </label>
-                    <div class="invalid-feedback">
-                        Você deve aceitar antes de fazer o envio.
-                      </div>
-                  </div>
+                </div>
 
-                  <div class="mb-3">
-                    <label for="observacao" class="form-label"></label>
-                    <textarea name="observacao" class="form-control" id="observacao" rows="4" readonly>
-    Termos de Politica de Privacidade:
-    Este documento estabelece os termos e condições pelos quais você poderá utilizar nossos serviços. Ao acessar e utilizar nossos serviços, você concorda com os termos descritos abaixo. Caso discorde de qualquer parte destes termos, pedimos que interrompa o uso dos nossos serviços imediatamente.
-    Aceitação dos Termos Ao utilizar nossos serviços, você reconhece que leu, entendeu e concorda em se submeter aos Termos de Uso, assim como à nossa Política de Privacidade.
-    Modificações dos Termos Reservamo-nos o direito de alterar ou modificar estes Termos de Uso a qualquer momento, sem aviso prévio. É sua responsabilidade verificar periodicamente este documento para estar ciente de quaisquer alterações.    
-    Uso dos Serviços Você concorda em utilizar nossos serviços apenas para fins legais e de acordo com todas as leis aplicáveis. Qualquer tentativa de violação da segurança do sistema ou uso indevido dos serviços resultará em suspensão ou encerramento imediato da sua conta.
-    Propriedade Intelectual Todo o conteúdo disponibilizado em nossos serviços, incluindo textos, gráficos, logotipos, imagens, é de nossa propriedade ou de nossos licenciadores. O uso indevido desse material é estritamente proibido.
-    Limitação de Responsabilidade Não nos responsabilizamos por quaisquer danos diretos ou indiretos decorrentes do uso ou incapacidade de usar nossos serviços. O uso é por sua conta e risco.
-    Rescisão Podemos rescindir ou suspender seu acesso aos nossos serviços a qualquer momento, sem aviso prévio, caso ocorra violação dos Termos de Uso.
-    Juridição Aplicável Estes Termos de Uso serão regidos e interpretados de acordo com as leis do país onde nossa empresa está sediada.
-    Ao continuar a utilizar nossos serviços, você confirma que está ciente e concorda com os Termos de Uso estabelecidos neste documento.
-                    </textarea>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary" type="submit">Enviar</button>
-                    <a href="./produto.html">Voltar</a>
-                  </div>
-            
-        </form>
-    </div>
+                <div class="mb-3">
+                  <label for="observacao" class="form-label"></label>
+                  <textarea name="observacao" class="form-control" id="observacao" rows="4" readonly>
+  Termos de Politica de Privacidade:
+  Este documento estabelece os termos e condições pelos quais você poderá utilizar nossos serviços. Ao acessar e utilizar nossos serviços, você concorda com os termos descritos abaixo. Caso discorde de qualquer parte destes termos, pedimos que interrompa o uso dos nossos serviços imediatamente.
+  Aceitação dos Termos Ao utilizar nossos serviços, você reconhece que leu, entendeu e concorda em se submeter aos Termos de Uso, assim como à nossa Política de Privacidade.
+  Modificações dos Termos Reservamo-nos o direito de alterar ou modificar estes Termos de Uso a qualquer momento, sem aviso prévio. É sua responsabilidade verificar periodicamente este documento para estar ciente de quaisquer alterações.    
+  Uso dos Serviços Você concorda em utilizar nossos serviços apenas para fins legais e de acordo com todas as leis aplicáveis. Qualquer tentativa de violação da segurança do sistema ou uso indevido dos serviços resultará em suspensão ou encerramento imediato da sua conta.
+  Propriedade Intelectual Todo o conteúdo disponibilizado em nossos serviços, incluindo textos, gráficos, logotipos, imagens, é de nossa propriedade ou de nossos licenciadores. O uso indevido desse material é estritamente proibido.
+  Limitação de Responsabilidade Não nos responsabilizamos por quaisquer danos diretos ou indiretos decorrentes do uso ou incapacidade de usar nossos serviços. O uso é por sua conta e risco.
+  Rescisão Podemos rescindir ou suspender seu acesso aos nossos serviços a qualquer momento, sem aviso prévio, caso ocorra violação dos Termos de Uso.
+  Juridição Aplicável Estes Termos de Uso serão regidos e interpretados de acordo com as leis do país onde nossa empresa está sediada.
+  Ao continuar a utilizar nossos serviços, você confirma que está ciente e concorda com os Termos de Uso estabelecidos neste documento.
+                  </textarea>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Enviar</button>
+                  <a href="./produto.html">Voltar</a>
+                </div>
+          
+      </form>
+        </section>
+    </section>
+    
 </body>
+
 </html>
