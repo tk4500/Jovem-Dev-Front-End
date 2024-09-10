@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+ul,a, h3{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: red;
+    height: 20px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu li{
+    margin-right: 20px;
+}
+.menu li a:hover{
+    color: beige;
+}
+h3{
+    height: 100%;
+}
+
+
+.container{
+    padding: 20;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-colunas{
+    padding: 20;
+    display: flex;
+    flex-direction: column;
+}
+
+div{
+    height: 50px;
+    width: 50px;
+}
+
+.div-1{
+    background-color: aqua;
+}
+.div-2{
+    background-color: brown;
+}
+.div-3{
+    background-color: coral;
+}
+.div-4{
+    background-color: darkgreen;
+}
+
+.div-5{
+    background-color: fuchsia;
+}
+.div-6{
+    background-color: gold;
+}
+.div-7{
+    background-color: hotpink;
+}
+.div-8{
+    background-color: indigo;
+}

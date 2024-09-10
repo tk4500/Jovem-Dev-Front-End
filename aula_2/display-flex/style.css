@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.flex-container{
+    display: flex;
+    border: 1px solid black;
+    flex-direction: row;
+}
+.div-1{
+ background-color: aqua;
+}
+.div-2{
+    background-color: red;
+}
+.div-3{
+    background-color: blue;
+}
+.div-4{
+    background-color: chartreuse;
+}
+.div-5{
+    background-color: yellow;
+}
+.div-6{
+    background-color: brown;
+}

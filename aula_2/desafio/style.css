@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: 'MyriadPro-Regular', sans-serif, "Trebuchet MS", Arial, Geneva, Helvetica;
+}
+.flex-container{
+    padding: 20;
+    display: flex;
+    flex-direction: column;
+}
+.div-1{
+    padding: 10px;
+    flex-wrap: wrap;
+    height: 50px;
+    width: 100%;
+    background-color: #024c6f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul, li,a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 0;
+}
+h3{
+    color: white;
+}
+li{
+    height: fit-content;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+}
+.div-2{
+    width: fit-content;
+    background-color: #005982;
+    height: 100%;
+}
+.flex-container-2{
+    display: flex;
+    flex-direction: row;
+}
+form{
+    width: 100%;
+}
