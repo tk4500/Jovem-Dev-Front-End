@@ -18,6 +18,9 @@
             <div class="div-2">
                 <ul>
                     <li>
+                        <a href="./menu.html">Menu</a>
+                    </li>
+                    <li>
                         <a href="./funcionarios.html">Funcionarios</a>
                     </li>
                     <li>
@@ -31,77 +34,66 @@
                     </li>
                 </ul>
             </div>
-                <form action="mailto:psiopstk1500@gmail.com">
-                    <div>
-                        <label for="nome">Nome:</label>
-                        <input type="text" name="nome">
+                <form action="./menu.html">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="nome" placeholder="Nome">
+                        <label for="nome">Nome</label>
                     </div>
-                    <br>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="email" placeholder="Email">
+                        <label for="email">Email</label>
                     </div>
-                    <br>
-                    <div>
-                        <label for="idade">Idade:</label>
-                        <input type="number" name="idade">
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control" id="idade" placeholder="Idade">
+                        <label for="idade">Idade</label>
                     </div>
-                    <br>
-                    <div>
-                        <label for="idade">Idade:</label>
-                        <input type="number" name="idade">
-                    </div>
-                    <br>
-                    <div>
-                        <input type="radio" name="sexo" value="masculino">
-                        <label for="masculino">Masculino</label>
-                        <input type="radio" name="sexo" value="feminino">
-                        <label for="feminino">Feminino</label>
-                        <input type="radio" name="sexo" value="outro">
-                        <label for="utro">Outro</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="sexo" value="casado">
-                        <label for="casado">Casado</label>
-                        <input type="radio" name="sexo" value="solteiro">
-                        <label for="solteiro">Solteiro</label>
-                        <input type="radio" name="sexo" value="divorciado">
-                        <label for="divorciado">Divorciado</label>
-                        <input type="radio" name="sexo" value="viuvo">
-                        <label for="viuvo">Viuvo</label>
-                    </div>
-                    <div>
-                        <select name="profissao" id="">
-                            <option value="PROGRAMADOR">Programador</option>
-                            <option value="ANALISTA">Analista</option>
-                            <option value="DESIGNER">Designer</option>
-                        </select>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="politica-privacidade" value="true">
-                        <label for="politica-privacidade">Eu aceito os termos de Política de Privadidade</label>
-                    </div>
-                    <textarea name="observacao" id="" rows="4" cols="40">
-                        Este documento estabelece os termos e condições pelos quais você poderá utilizar nossos serviços. Ao acessar e utilizar nossos serviços, você concorda com os termos descritos abaixo. Caso discorde de qualquer parte destes termos, pedimos que interrompa o uso dos nossos serviços imediatamente.
-            
-            Aceitação dos Termos Ao utilizar nossos serviços, você reconhece que leu, entendeu e concorda em se submeter aos Termos de Uso, assim como à nossa Política de Privacidade.
-            
-            Modificações dos Termos Reservamo-nos o direito de alterar ou modificar estes Termos de Uso a qualquer momento, sem aviso prévio. É sua responsabilidade verificar periodicamente este documento para estar ciente de quaisquer alterações.
-            
-            Uso dos Serviços Você concorda em utilizar nossos serviços apenas para fins legais e de acordo com todas as leis aplicáveis. Qualquer tentativa de violação da segurança do sistema ou uso indevido dos serviços resultará em suspensão ou encerramento imediato da sua conta.
-            
-            Propriedade Intelectual Todo o conteúdo disponibilizado em nossos serviços, incluindo textos, gráficos, logotipos, imagens, é de nossa propriedade ou de nossos licenciadores. O uso indevido desse material é estritamente proibido.
-            
-            Limitação de Responsabilidade Não nos responsabilizamos por quaisquer danos diretos ou indiretos decorrentes do uso ou incapacidade de usar nossos serviços. O uso é por sua conta e risco.
-            
-            Rescisão Podemos rescindir ou suspender seu acesso aos nossos serviços a qualquer momento, sem aviso prévio, caso ocorra violação dos Termos de Uso.
-            
-            Juridição Aplicável Estes Termos de Uso serão regidos e interpretados de acordo com as leis do país onde nossa empresa está sediada.
-            
-            Ao continuar a utilizar nossos serviços, você confirma que está ciente e concorda com os Termos de Uso estabelecidos neste documento.
-                    </textarea>
-                    <input type="submit">
-                    <a href="./funcionarios.html">Voltar</a>
+                    <select class="form-select mb-3" aria-label="sexo">
+                        <option selected>Sexo</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Feminino</option>
+                        <option value="3">Outro</option>
+                    </select>
+                    <select class="form-select mb-3" aria-label="estado-civil">
+                        <option selected>Estado Civil</option>
+                        <option value="1">Casado</option>
+                        <option value="2">Solteiro</option>
+                        <option value="3">Divorciado</option>
+                        <option value="4">Viuvo</option>
+                    </select>
+                    <select class="form-select mb-3" aria-label="profissao">
+                        <option selected>Profissão</option>
+                        <option value="1">Programador</option>
+                        <option value="2">Analista</option>
+                        <option value="3">Designer</option>
+                    </select>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                          Eu Aceito os termos de Política de Privacidade
+                        </label>
+                        <div class="invalid-feedback">
+                            Você deve aceitar antes de fazer o envio.
+                          </div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="observacao" class="form-label"></label>
+                        <textarea name="observacao" class="form-control" id="observacao" rows="4" readonly>
+        Termos de Politica de Privacidade:
+        Este documento estabelece os termos e condições pelos quais você poderá utilizar nossos serviços. Ao acessar e utilizar nossos serviços, você concorda com os termos descritos abaixo. Caso discorde de qualquer parte destes termos, pedimos que interrompa o uso dos nossos serviços imediatamente.
+        Aceitação dos Termos Ao utilizar nossos serviços, você reconhece que leu, entendeu e concorda em se submeter aos Termos de Uso, assim como à nossa Política de Privacidade.
+        Modificações dos Termos Reservamo-nos o direito de alterar ou modificar estes Termos de Uso a qualquer momento, sem aviso prévio. É sua responsabilidade verificar periodicamente este documento para estar ciente de quaisquer alterações.    
+        Uso dos Serviços Você concorda em utilizar nossos serviços apenas para fins legais e de acordo com todas as leis aplicáveis. Qualquer tentativa de violação da segurança do sistema ou uso indevido dos serviços resultará em suspensão ou encerramento imediato da sua conta.
+        Propriedade Intelectual Todo o conteúdo disponibilizado em nossos serviços, incluindo textos, gráficos, logotipos, imagens, é de nossa propriedade ou de nossos licenciadores. O uso indevido desse material é estritamente proibido.
+        Limitação de Responsabilidade Não nos responsabilizamos por quaisquer danos diretos ou indiretos decorrentes do uso ou incapacidade de usar nossos serviços. O uso é por sua conta e risco.
+        Rescisão Podemos rescindir ou suspender seu acesso aos nossos serviços a qualquer momento, sem aviso prévio, caso ocorra violação dos Termos de Uso.
+        Juridição Aplicável Estes Termos de Uso serão regidos e interpretados de acordo com as leis do país onde nossa empresa está sediada.
+        Ao continuar a utilizar nossos serviços, você confirma que está ciente e concorda com os Termos de Uso estabelecidos neste documento.
+                        </textarea>
+                      </div>
+                      <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                        <a href="./produto.html">Voltar</a>
+                      </div>
                 </form>
         </section>
     </section>

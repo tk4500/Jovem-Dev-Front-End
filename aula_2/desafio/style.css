@@ -45,4 +45,9 @@ li{
 }
 form{
     width: 100%;
+    height: fit-content;
+}
+.lista{
+    width: 100%;
+    height: fit-content;
 }
