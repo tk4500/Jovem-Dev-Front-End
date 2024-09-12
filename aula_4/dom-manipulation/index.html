@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scrypt.js" defer></script>
+</head>
+<body>
+    <div id="divVazia"></div>
+    <label class="label-topo">Label Topo</label>
+    <div style="margin-left: 10px; display: flex; flex-direction: column;">
+        <form onsubmit="manipulando(event)" style="display: flex; flex-direction: column;">
+            <!-- <input type="text" name="texto" id="1">
+            <input type="text" name="texto1" id="2" >
+            <select name="opcao" id="3">
+                <option value="0">a</option>
+                <option value="1">b</option>
+                <option value="2">c</option>
+            </select> -->
+            <input type="text" name="texto" id="nome" onkeyup="atualizaLabelInput()">
+            <label id="labelInput"></label>
+            <button type="submit">enviar</button>
+        </form>
+
+    </div>
+</body>
+</html>
