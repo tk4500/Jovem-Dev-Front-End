@@ -1,0 +1,24 @@
+.titulo{
+  color: white;
+  width: fit-content;
+}
+.titulo-img{
+  height: fit-content;
+  width: fit-content;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+*{
+  padding: 10px;
+    flex-wrap:nowrap;
+    height: 40px;
+    width: 100%;
+    background-color: #024c6f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  height: fit-content;
+}
