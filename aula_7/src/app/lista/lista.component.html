@@ -1,0 +1,27 @@
+<table style="height: fit-content;" border>
+  <tr>
+    <th>Id:</th>
+    <th>Nome:</th>
+    <th>Email:</th>
+    <th>Fone:</th>
+    <th>Deleta:</th>
+  </tr>
+  <tr *ngFor="let cliente of clientes">
+    <td (dblclick)="editarCampo(cliente, 'id')" *ngIf="!cliente.editing.id">{{ cliente.id }}</td>
+    <td *ngIf="cliente.editing.id">
+      <input [(ngModel)]="cliente.id" (blur)="atualizaCliente(cliente)" (keyup.enter)="atualizaCliente(cliente)" />
+    </td>
+    <td (dblclick)="editarCampo(cliente, 'nome')" *ngIf="!cliente.editing.nome">{{ cliente.nome }}</td>
+    <td *ngIf="cliente.editing.nome">
+      <input [(ngModel)]="cliente.nome" (blur)="atualizaCliente(cliente)" (keyup.enter)="atualizaCliente(cliente)" />
+    </td>
+    <td (dblclick)="editarCampo(cliente, 'email')" *ngIf="!cliente.editing.email">{{ cliente.email }}</td>
+    <td *ngIf="cliente.editing.email">
+      <input [(ngModel)]="cliente.email" (blur)="atualizaCliente(cliente)" (keyup.enter)="atualizaCliente(cliente)" />
+    </td>
+    <td contenteditable="true">{{ cliente.fone }}</td>
+    <td>
+      <button (click)='deletaCliente(cliente.id)'>Deleta</button>
+    </td>
+  </tr>
+</table>

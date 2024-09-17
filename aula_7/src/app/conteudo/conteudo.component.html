@@ -1,0 +1,12 @@
+<body>
+  <div class="menu">
+      <button class="botao" (click)="trocarTela('formulario')">Botão 1</button>
+      <button class="botao" (click)="trocarTela('lista')">Botão 2</button>
+      <button class="botao" (click)="trocarTitulo('Trier Sistemas 2')">Botão 3</button>
+      <button class="botao" (click)="trocarTitulo('Trier Sistemas 3')">Botão 4</button>
+  </div>
+  <div class="conteudo">
+      <app-formulario *ngIf="tela === 'formulario'" (cadastroEvent)="cadastroCliente($event)" [id] = "id" ></app-formulario>
+      <app-lista *ngIf="tela === 'lista'" [clientes]="clientes"></app-lista>
+  </div>
+</body>

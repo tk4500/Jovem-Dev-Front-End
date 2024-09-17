@@ -1,0 +1,16 @@
+<div>
+  <label for="nome">Nome:</label>
+  <input type="text" name="nome" [(ngModel)]="Cliente.nome" />
+  <label>{{ Cliente.nome }}</label>
+</div>
+<div>
+  <label for="nome">Email:</label>
+  <input type="text" name="email" [(ngModel)]="Cliente.email" />
+  <label>{{ Cliente.email }}</label>
+</div>
+<div>
+  <label for="nome">Fone:</label>
+  <input type="text" name="fone" [(ngModel)]="Cliente.fone" />
+  <label>{{ Cliente.fone }}</label>
+</div>
+<button class="botao" (click)="meuMetodo()">Enviar</button>
