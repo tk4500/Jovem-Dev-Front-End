@@ -1,0 +1,5 @@
+<div>
+  <label for="pesquisa">Pesquisa:</label>
+  <input type="text" name="pesquisa" [(ngModel)]="pesquisa" (blur)="resultadoPesquisa(pesquisa)"/>
+  <button class="botao" (click)="resultadoPesquisa(pesquisa)">Enviar</button>
+</div>

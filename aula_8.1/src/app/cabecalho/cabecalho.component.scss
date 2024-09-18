@@ -1,0 +1,29 @@
+h1{
+  color: white;
+  width: fit-content;
+  align-self: center;
+
+}
+img{
+  height: fit-content;
+  width: fit-content;
+  justify-content: start;
+  padding:10px;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+*{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    flex-wrap:nowrap;
+    height: 40px;
+    width: 100%;
+    background-color: #024c6f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  height: fit-content;
+}

@@ -1,16 +1,16 @@
 <table style="height: fit-content;" border>
   <tr>
-    <th>Id:</th>
+    <!-- <th>Id:</th> -->
     <th>Nome:</th>
     <th>Email:</th>
     <th>Fone:</th>
     <th>Deleta:</th>
   </tr>
-  <tr *ngFor="let cliente of clientes">
-    <td (dblclick)="editarCampo(cliente, 'id')" *ngIf="!cliente.editing.id">{{ cliente.id }}</td>
+  <tr *ngFor="let cliente of clientes; let i = index">
+    <!-- <td (dblclick)="editarCampo(cliente, 'id')" *ngIf="!cliente.editing.id">{{ cliente.id }}</td>
     <td *ngIf="cliente.editing.id">
       <input [(ngModel)]="cliente.id" (blur)="atualizaCliente(cliente)" (keyup.enter)="atualizaCliente(cliente)" />
-    </td>
+    </td> -->
     <td (dblclick)="editarCampo(cliente, 'nome')" *ngIf="!cliente.editing.nome">{{ cliente.nome }}</td>
     <td *ngIf="cliente.editing.nome">
       <input [(ngModel)]="cliente.nome" (blur)="atualizaCliente(cliente)" (keyup.enter)="atualizaCliente(cliente)" />
@@ -24,7 +24,7 @@
       <input [(ngModel)]="cliente.fone" (blur)="atualizaCliente(cliente)" (keyup.enter)="atualizaCliente(cliente)" />
     </td>
     <td>
-      <button (click)='deletaCliente(cliente.id)'>Deleta</button>
+      <button (click)='deletaCliente(i)'>Deleta</button>
     </td>
   </tr>
 </table>

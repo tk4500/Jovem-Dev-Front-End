@@ -7,7 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class ListaComponent {
 
-
 editarCampo(cliente: any, campo: string) {
   cliente.editing[campo] = true;
 }
@@ -28,7 +27,13 @@ deletaCliente(id: Number) {
     return -1;
   }
   atualizaCliente(cliente: any) {
-    console.log("Cliente salvo=>" + cliente)
+    const clienteinfo = {
+      id: cliente.id,
+      nome: cliente.nome,
+      email: cliente.email,
+      fone: cliente.fone
+    }
+    console.log("Cliente salvo=> " + clienteinfo)
     cliente.editing.id = false;
     cliente.editing.nome = false;
     cliente.editing.email = false;

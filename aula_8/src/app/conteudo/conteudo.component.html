@@ -1,0 +1,11 @@
+<body>
+  <div class="menu">
+      <button routerLink="/inicial" routerLinkActive="active">inicial</button>
+      <button routerLink="/formulario" routerLinkActive="active">Botão 2</button>
+      <button routerLink="/lista" routerLinkActive="active">Botão 3</button>
+      <button (click)="trocarTitulo('Trier Sistemas 3')">Botão 4</button>
+  </div>
+  <div class="conteudo">
+    <router-outlet></router-outlet>
+  </div>
+</body>
