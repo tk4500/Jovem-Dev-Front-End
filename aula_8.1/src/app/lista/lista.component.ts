@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Client } from '../models/client';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-lista',
@@ -8,15 +9,53 @@ import { Client } from '../models/client';
 })
 export class ListaComponent {
 
+constructor(private route: Router){}
 
 editarCampo(cliente: any, campo: string) {
   cliente.editing[campo] = true;
 }
 
-deletaCliente(i: Number) {
+deletaCliente(i: number) {
  this.clientes.splice(i,1);
 }
-@Input() clientes: any;
+clientes: Array<Client> = [
+  {
+    id: 1 ,
+    nome: "jacinto",
+    email: "",
+    fone: "",
+    editing: {
+      id: false,
+      nome: false,
+      email: false,
+      fone: false
+    },
+  },
+  {
+    id: 2 ,
+    nome: "machado",
+    email: "",
+    fone: "",
+    editing: {
+      id: false,
+      nome: false,
+      email: false,
+      fone: false
+    },
+  },
+  {
+    id: 3 ,
+    nome: "akino",
+    email: "",
+    fone: "",
+    editing: {
+      id: false,
+      nome: false,
+      email: false,
+      fone: false
+    },
+  },
+];
 
   atualizaCliente(cliente: Client) {
     console.log("Cliente salvo=> " + cliente)
@@ -26,4 +65,8 @@ deletaCliente(i: Number) {
     cliente.editing.fone = false;
 
   }
+
+  rotear(id: number) {
+    this.route.navigateByUrl(`clientes/formulario/${id}`);
+    }
 }

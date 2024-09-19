@@ -1,16 +1,17 @@
 <table style="height: fit-content;" border>
   <tr>
-    <!-- <th>Id:</th> -->
+    <th>Id:</th>
     <th>Nome:</th>
     <th>Email:</th>
     <th>Fone:</th>
+    <th>Editar:</th>
     <th>Deleta:</th>
   </tr>
   <tr *ngFor="let cliente of clientes; let i = index">
-    <!-- <td (dblclick)="editarCampo(cliente, 'id')" *ngIf="!cliente.editing.id">{{ cliente.id }}</td>
+    <td (dblclick)="editarCampo(cliente, 'id')" *ngIf="!cliente.editing.id">{{ cliente.id }}</td>
     <td *ngIf="cliente.editing.id">
       <input [(ngModel)]="cliente.id" (blur)="atualizaCliente(cliente)" (keyup.enter)="atualizaCliente(cliente)" />
-    </td> -->
+    </td>
     <td (dblclick)="editarCampo(cliente, 'nome')" *ngIf="!cliente.editing.nome">{{ cliente.nome }}</td>
     <td *ngIf="cliente.editing.nome">
       <input [(ngModel)]="cliente.nome" (blur)="atualizaCliente(cliente)" (keyup.enter)="atualizaCliente(cliente)" />
@@ -22,6 +23,9 @@
     <td (dblclick)="editarCampo(cliente, 'fone')" *ngIf="!cliente.editing.fone">{{ cliente.fone }}</td>
     <td *ngIf="cliente.editing.fone">
       <input [(ngModel)]="cliente.fone" (blur)="atualizaCliente(cliente)" (keyup.enter)="atualizaCliente(cliente)" />
+    </td>
+    <td>
+      <button (click)="rotear(cliente.id)">Edita</button>
     </td>
     <td>
       <button (click)='deletaCliente(i)'>Deleta</button>

@@ -6,6 +6,7 @@ import { ListaComponent } from './lista/lista.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
+  {path: '', redirectTo: 'inicial', pathMatch: 'full'},
   {path: 'inicial', component: InicialComponent},
   {path: 'formulario', component: FormularioComponent},
   {path: 'formulario/:id', component: FormularioComponent},
@@ -13,8 +14,8 @@ const routes: Routes = [
   {path: 'teste', redirectTo: 'clientes'},
   {path: 'clientes',
     children: [
-      {path: '', component: FormularioComponent},
       {path: 'formulario', component: FormularioComponent},
+      {path: 'formulario/:id', component: FormularioComponent},
       {path: 'lista', component: ListaComponent}
     ]
   },
