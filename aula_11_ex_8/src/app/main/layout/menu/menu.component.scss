@@ -1,0 +1,26 @@
+.menu{
+  background-color: var(--cor-secundaria);
+  width: 125px;
+}
+button{
+  background-color: var(--cor-primaria);
+  height: 40px;
+  width: 100%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border: 0;
+  color: white;
+}
+.active{
+  background-color: var(--ativo);
+}
+.main{
+  height: fit-content;
+}
+.internal{
+  width: 90%;
+  float: right;
+}
+.active-internal{
+  background-color: var(--ativo);
+}

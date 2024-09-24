@@ -1,0 +1,9 @@
+<form [formGroup]="form">
+  <label for="name">Name: </label>
+  <input id="name" type="text" formGroupName="name">
+  <!-- <label for="estoque">Estoque: </label>
+  <input id="estoque" type="text" formGroupName="estoque"> -->
+  <button [disabled]="!form.valid" (click)="envia()">
+    Save
+  </button>
+</form>

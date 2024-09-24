@@ -1,0 +1,13 @@
+<div class="menu">
+  <button routerLink="/inicial" routerLinkActive="active">Inicial</button>
+  <button routerLink="/caminhao" routerLinkActive="active">Caminhão</button>
+  <div class="main" *ngIf="isCurrentRoute('/caminhao')">
+    <button class="internal" routerLink="/caminhao/cadastro" routerLinkActive="active">Cadastro de Caminhão</button>
+    <button class="internal" routerLink="/caminhao/listagem" routerLinkActive="active">Listagem de Caminhão</button>
+  </div>
+  <button routerLink="/produto" routerLinkActive="active">Produto</button>
+  <div class="main" *ngIf="isCurrentRoute('/produto')">
+    <button class="internal" routerLink="/produto/cadastro" routerLinkActive="active">Cadastro de Produto</button>
+    <button class="internal" routerLink="/produto/listagem" routerLinkActive="active">Listagem de Produto</button>
+  </div>
+</div>
