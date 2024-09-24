@@ -35,4 +35,14 @@ export class HttpService {
   buscarAlbuns(){
     return this.http.get('albums').pipe(take(1));
   }
+
+  buscaPhotos(){
+    return this.http.get('photos').pipe(take(1));
+  }
+  buscaPhotosPorAlbumId(id: Number){
+    return this.http.get(`albums/${id}/photos`).pipe(take(1));
+  }
+  buscaPrimeiraFoto(id: Number){
+    return this.http.get(`albums/${id}/photos`).pipe(take(1));
+  }
 }
