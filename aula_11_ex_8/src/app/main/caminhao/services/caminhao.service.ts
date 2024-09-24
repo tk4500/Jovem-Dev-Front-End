@@ -6,13 +6,14 @@ import { Caminhao } from '../../models/caminhao';
 })
 export class CaminhaoService {
   caminhoes: Array<Caminhao> = [];
+  id = 0;
   constructor() { }
   addCaminhao(caminhao: Caminhao){
+    caminhao.id = this.id.valueOf();
     this.caminhoes.push(caminhao);
-    console.log(caminhao);
+    this.id++;
   }
   listCaminhoes(){
-    console.log(this.caminhoes)
     return this.caminhoes;
   }
 }

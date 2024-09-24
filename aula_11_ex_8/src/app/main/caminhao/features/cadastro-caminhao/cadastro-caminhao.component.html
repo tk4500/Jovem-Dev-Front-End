@@ -1,4 +1,7 @@
-<form [formGroup]="caminhaoForm">
-  <label for="placa">Placa: </label>
-  <input id="placa" type="text" formControlName="placa">
+<form [formGroup]="caminhaoForm" (submit)="envia()">
+  <label for="placa">Placa do Caminhão:</label>
+  <input id="placa" formControlName="placa" />
+  <label for="kmAtual">Kilometragem do Caminhão:</label>
+  <input id="kmAtual" type="number" formControlName="kmAtual" />
+  <button type="submit" [disabled]="caminhaoForm.invalid">Cadastrar</button>
 </form>

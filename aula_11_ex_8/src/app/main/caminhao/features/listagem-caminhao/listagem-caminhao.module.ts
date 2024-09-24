@@ -10,6 +10,9 @@ import { ListagemCaminhaoComponent } from './listagem-caminhao.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    ListagemCaminhaoComponent
   ]
 })
 export class ListagemCaminhaoModule { }

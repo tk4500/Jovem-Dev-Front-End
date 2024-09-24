@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { CaminhaoRoutingModule } from './caminhao-routing.module';
 import { CaminhaoComponent } from './caminhao.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CadastroCaminhaoModule } from './features/cadastro-caminhao/cadastro-caminhao.module';
+import { ListagemCaminhaoModule } from './features/listagem-caminhao/listagem-caminhao.module';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     CaminhaoRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CadastroCaminhaoModule,
+    ListagemCaminhaoModule
   ]
 })
 export class CaminhaoModule { }

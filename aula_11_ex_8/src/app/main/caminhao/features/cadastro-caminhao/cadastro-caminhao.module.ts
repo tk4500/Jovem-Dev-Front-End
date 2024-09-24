@@ -12,6 +12,9 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     ReactiveFormsModule
+  ],
+  exports:[
+    CadastroCaminhaoComponent
   ]
 })
 export class CadastroCaminhaoModule { }

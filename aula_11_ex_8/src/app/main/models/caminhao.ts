@@ -1,5 +1,5 @@
 export interface Caminhao{
-id: number,
+id?: number,
 placa: string,
 kmAtual: number,
 kmRodada: number,
