@@ -7,15 +7,6 @@ import { Album } from './model/album';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit{
-  list: Array<any> = [];
-  albuns: Array<any> =[];
-  constructor(private service: HttpService){}
-  ngOnInit(): void {
-    this.service.buscarAlbuns().subscribe(values=> {
-      albuns = values;
-    });
-    console.log(this.albuns);
-  }
+export class AppComponent {
   title = 'aula_12_http';
 }

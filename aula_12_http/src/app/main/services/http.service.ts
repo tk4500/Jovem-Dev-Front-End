@@ -7,6 +7,7 @@ import { take } from 'rxjs';
 })
 export class HttpService {
 
+
   albumId?: number;
 
   constructor(private http: HttpClient) { }
@@ -42,7 +43,7 @@ export class HttpService {
   buscaPhotosPorAlbumId(id: Number){
     return this.http.get(`albums/${id}/photos`).pipe(take(1));
   }
-  buscaPrimeiraFoto(id: Number){
-    return this.http.get(`albums/${id}/photos`).pipe(take(1));
+  buscaPhotosPorId(id: Number) {
+    return this.http.get(`photos/${id}`).pipe(take(1));
   }
 }

@@ -1,6 +1,7 @@
 <div class="albuns">
+
   <div class="directory" *ngFor="let item of albuns">
-    <img [id]="item.id" [src] = "item.firstPhoto?.thumbnailUrl" (click)="redirect(item.id)">
+    <img [src] = "item.thumbnailUrl" (click)="redirect(item.id)">
     <label [for]="item.id">{{item.title}}</label>
   </div>
 </div>
