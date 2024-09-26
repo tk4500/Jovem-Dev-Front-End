@@ -1,0 +1,28 @@
+.container-calculadora{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+}
+
+.grid-calculadora {
+  display: grid;
+  grid-template-columns: repeat(1, 4fr)
+
+}
+
+.grid-calculadora button{
+  height: 50px;
+  width: 50px;
+  background-color: aqua;
+
+}
+input{
+  height: fit-content;
+  width: 200px;
+}
+
+*{
+  height: fit-content;
+}

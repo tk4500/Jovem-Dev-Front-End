@@ -1,0 +1,33 @@
+<div class="container-calculadora">
+  <h1>Calculadora</h1>
+  <div class="grid-calculadora">
+    <label>{{ ans }}</label>
+    <input type="number" placeholder="...." [ngModel]="conta" />
+    <div>
+      <button (click)="addNumber(1)">1</button>
+      <button (click)="addNumber(2)">2</button>
+      <button (click)="addNumber(3)">3</button>
+      <button (click)="somaNumber()">+</button>
+    </div>
+    <div>
+      <button (click)="addNumber(4)">4</button>
+      <button (click)="addNumber(5)">5</button>
+      <button (click)="addNumber(6)">6</button>
+      <button (click)="subtrairNumber()">-</button>
+    </div>
+    <div>
+      <button (click)="addNumber(7)">7</button>
+      <button (click)="addNumber(8)">8</button>
+      <button (click)="addNumber(9)">9</button>
+      <button (click)="multiNumber()">*</button>
+    </div>
+    <div>
+      <button (click)="limparTela()">C</button>
+      <button (click)="addNumber(0)">0</button>
+      <button (click)="dividirNumber()">/</button>
+      <button (click)="result()">=</button>
+    </div>
+  </div>
+
+  <table></table>
+</div>
